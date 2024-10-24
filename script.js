@@ -26,7 +26,7 @@ async function getSongs(folder) {
   
   let songName = [];
   let artistName = [];
-  let a = await fetch(`https://mangeshs1134.github.io/spotify-clone/tree/main/${folder}/`);
+  let a = await fetch(`/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
