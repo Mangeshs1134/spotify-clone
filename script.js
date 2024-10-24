@@ -26,7 +26,7 @@ async function getSongs(folder) {
   
   let songName = [];
   let artistName = [];
-  let a = await fetch(`/${folder}/`);
+  let a = await fetch(`https://github.com/Mangeshs1134/spotify-clone/tree/main/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -139,7 +139,7 @@ const playMusic = (track, artist, pause = false) => {
 async function displayPlaylistAlbums() {
 
   console.log(`displaying playlist Albums`); 
-  let a = await fetch('/fav/')
+  let a = await fetch('https://github.com/Mangeshs1134/spotify-clone/tree/main/fav/')
   let response = await a.text();
   // console.log(response);
   let div = document.createElement('div')
@@ -154,7 +154,7 @@ async function displayPlaylistAlbums() {
       let folder = element.href.split('/').slice(-1)[0]
       // console.log(folder);
       // get the metadata of the folder
-      let a = await fetch(`fav/${folder}/info.json`)
+      let a = await fetch(`https://github.com/Mangeshs1134/spotify-clone/tree/main/fav/${folder}/info.json`)
       let response = await a.json()
       playlistCardContainer = document.querySelector(".playlistCardContainer")
       playlistCardContainer.innerHTML +=  `<div data-folder= "${folder}"  class="card playlistFolder">
@@ -195,7 +195,7 @@ return songs
 async function displayArtistAlbums() {
 
   console.log(`displaying Albums`); 
-  let a = await fetch('/songs/')
+  let a = await fetch('https://github.com/Mangeshs1134/spotify-clone/tree/main/songs/')
   let response = await a.text();
   // console.log(response);
   let div = document.createElement('div')
@@ -210,7 +210,7 @@ async function displayArtistAlbums() {
       let folder = element.href.split('/').slice(-1)[0]
       // console.log(folder);
       // get the metadata of the folder
-      let a = await fetch(`songs/${folder}/info.json`)
+      let a = await fetch(`https://github.com/Mangeshs1134/spotify-clone/tree/main/songs/${folder}/info.json`)
       let response = await a.json()
       artistCardContainer = document.querySelector(".artistCardContainer")
       artistCardContainer.innerHTML +=  `<div data-folder= "${folder}" class="card artistFolder">
