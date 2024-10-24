@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>'Spotify - Web Player: Music for everyone'</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <link rel="stylesheet" href="mediaQueries.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="body">
+    <div class="navbar flex">
+      <div class="logo">
+        <img class="invert" src="img/logo.svg" alt="" />
+      </div>
+      <div class="searchBar flex">
+        <div class="home flex align-center">
+          <img class="invert homeSvg" src="img/home.svg" alt="" />
+        </div>
+        <div class=" music  align-center">
+          <img class="musicSvg invert" src="img/music.svg" alt="" />
+        </div>
+
+        <form class="form-search flex" action="">
+          <div class="searchLogo flex">
+            <img class="invert" src="img/search.svg" alt="aa" />
+          </div>
+          <input class="" type="search" placeholder="What do you want to play?" value="" />
+        </form>
+      </div>
+      <div class="button align-center">
+        <button class="sign-up">Sign up</button>
+
+        <button class="log-in">Log in</button>
+      </div>
+    </div>
+    <div class="main flex">
+      <div class="left">
+        <div class="library flex">
+          <div class="your-lib align-center flex">
+            <div class="lib-logo m-10">
+              <img class="invert" src="img/library.svg" alt="" />
+            </div>
+            <div class="lib-tag">Your Favourite</div>
+          </div>
+          <div class="add-lib align-center flex gap-20">
+            <button class="add-to-playlist">
+              <img class="invert" src="img/add.svg" alt="" />
+            </button>
+            <button class="add-to-playlist close">
+              <!-- <img class="invert" src="add.svg" alt="" /> -->
+              close
+            </button>
+          </div>
+        </div>
+
+        <div class="playlist scrollable-container">
+          <!-- <div class="create-playlist flex">
+              <div class="play-ab flex">
+                <span class="play-a">Create your first playlist</span>
+                <span class="play-b">It's easy , we will help you</span>
+              </div>
+
+              <button class="play-create">Create playlist</button>
+            </div> -->
+          <!-- <div class="browse-podcast flex">
+              <div class="play-ab flex">
+                <span class="play-a">Let's find some podcasts to follow</span>
+                <span class="play-b"
+                  >We will keep you updated for new episodes</span
+                >
+              </div>
+
+              <button class="play-create podcast-button">
+                Browse podacasts
+              </button>
+            </div> -->
+
+
+          <div class=" songList">
+            <ul>
+              
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer flex">
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="right  flex">
+        <div class="artists scrollable-container flex">
+          <div class="artist-heading flex">
+            <div>
+              <h2>Popular Playlists</h2>
+            </div>
+            <div class="show-all">
+              <button>Show all</button>
+            </div>
+          </div>
+          <div class="playlistCardContainer flex">
+        
+          </div>
+          <div class="artist-heading flex">
+            <div>
+              <h2>Popular Artists</h2>
+            </div>
+            <div class="show-all">
+              <button>Show all</button>
+            </div>
+          </div>
+          <div class="artistCardContainer flex">
+           
+          </div>
+        </div>
+        <div class="playAndSeekbar">
+          <div class="seekbar ">
+
+            <img class=" circle" src="img/circle.svg" alt="">
+
+          </div>
+          <div class="playbar flex space-btwn">
+
+            <div class="songTitle">
+
+            </div>
+            <div class="playTheSong flex ">
+              <div class="previous-btn playbar-btn ">
+                <img class="" src="img/previous-btn.svg" alt="">
+              </div>
+              <div class="playBtn playbar-btn">
+                <img id="playBtn" src="img/play.svg" alt="">
+              </div>
+              <div class="next-btn playbar-btn">
+                <img src="img/next-btn.svg" alt="">
+              </div>
+            </div>
+            <div class="songTimeAndVolume">
+              <div class="songTiming">00:00/00:00</div>
+              <div class="songVolume ">
+                <input type="range" name="" id="volume">
+                <span class="volSvg"><img id="volSvg" src="img/volume.svg" alt=""></span>
+              </div>
+            </div>
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
